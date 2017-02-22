@@ -1,0 +1,302 @@
+@light-color: #f1f1f1;
+@dark-color: darkgray;
+@white-color: white;
+@black-color: black;
+@menu-font: "NexaLight";
+@scroll-font: "NexaBold";
+@paragraph-font: "OpenSansLight";
+@signature-font: "FeltTipWoman";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+section {
+    height: 100vh;
+}
+
+.menu {
+    position: relative;
+    width: 93.75%;
+    margin: 0 auto;
+    padding-top: 3.7vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: @menu-font;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: .025em;
+    ul {
+        padding-bottom: 3.7vh;
+        li {
+            display: inline;
+            padding: 0 1.64%;
+        }
+    }
+}
+
+.light-menu {
+    border-bottom: 1px solid @light-color;
+    a {
+        color: @light-color;
+    }
+}
+
+.dark-menu {
+    border-bottom: 1px solid @dark-color;
+    a {
+        color: @dark-color;
+    }
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    p {
+        font-family: @scroll-font;
+        font-size: 1.125rem;
+        font-weight: 100;
+        letter-spacing: .1em;
+    }
+    i {
+        animation: arrow-animate .5s ease-in-out infinite;
+        animation-fill-mode: both;
+        font-size: 3rem;
+    }
+}
+
+.light-scroll {
+    color: @light-color;
+    i {
+        color: @light-color;
+    }
+}
+
+.dark-scroll {
+    color: @dark-color;
+    i {
+        color: @dark-color;
+    }
+}
+
+.contact-header {
+    position: relative;
+    margin: 0 auto 2.5vh auto;
+    text-align: center;
+    p {
+        text-transform: uppercase;
+        color: @black-color;
+        font-size: 2.25vw;
+        font-family: @scroll-font;
+        line-height: 1;
+        letter-spacing: .05em;
+    }
+}
+
+.contact-info {
+    position: relative;
+    margin: 0 auto 6vh auto;
+    text-align: center;
+    p {
+        font-size: 3.75vw;
+    }
+    a {
+        text-transform: uppercase;
+        color: @black-color;
+        font-size: 4.75vw;
+        font-family: @menu-font;
+        line-height: 1;
+        letter-spacing: .1em;
+    }
+}
+
+.social-icon {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    border: 1px solid @black-color;
+    border-radius: 100%;
+    text-align: center;
+    i {
+        padding-top: 6px;
+        font-size: 3rem;
+    }
+    a {
+        color: @black-color;
+    }
+}
+
+#home-page {
+    background: #4d5f5f url("../../images/home/home-bg.jpg") no-repeat center;
+    background-size: cover;
+    #home-logo {
+        position: absolute;
+        top: 22.96%;
+        left: 50%;
+        width: 80%;
+        height: 53.06%;
+        margin-left: -40%;
+        background: url("../../images/home/logo.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+#about-me-page {
+    background-color: @white-color;
+    #about-me-container {
+        position: relative;
+        height: 61%;
+        max-width: 78.13%;
+        margin: 7.04vh auto;
+        #about-me-photo {
+            width: 48.27%;
+            height: 100%;
+            float: left;
+            margin: 0 3.47% 3% 0;
+            text-align: center;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        #about-me-content {
+            color: @black-color;
+            #about-me-header {
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 6.3vw;
+                font-family: @menu-font;
+                font-weight: 100;
+                letter-spacing: .1em;
+                line-height: 1;
+            }
+            .about-me-text {
+                text-align: justify;
+                text-indent: 1rem;
+                font-family: @paragraph-font;
+                font-size: 1.33rem;
+                letter-spacing: .025em;
+            }
+            #about-me-signature {
+                text-align: right;
+                font-family: @signature-font;
+                font-size: 2.08rem;
+            }
+        }
+    }
+}
+
+#portfolio-page {
+    background: #050c0b url("../../images/portfolio/portfolio-bg.jpg") no-repeat center;
+    background-size: cover;
+    #portfolio-header {
+        position: relative;
+        height: auto;
+        margin: 6.33vh auto 0;
+        text-align: center;
+        line-height: 1;
+        p {
+            text-transform: uppercase;
+            color: @light-color;
+            font-size: 4.75vw;
+            font-family: @menu-font;
+            font-weight: 100;
+            letter-spacing: .1em;
+        }
+    }
+    #portfolio-content {
+        width: 82.92%;
+        height: 50.93%;
+        margin: 3.33vh auto 0;
+        ul {
+            width: 100%;
+            height: 100%;
+            li {
+                width: 17%;
+                height: 45%;
+                float: left;
+                margin: 1.27325vh 1.5%;
+                text-align: center;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+#contact-page {
+    background-color: @white-color;
+    #contact-content {
+        position: relative;
+        top: 5%;
+        height: 43.15%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: @white-color;
+    #copyright-line {
+        width: 93.75%;
+        margin: 0 auto;
+        border-top: 1px solid @dark-color;
+        text-align: center;
+    }
+    #copyright-text {
+        padding-top: 40px;
+        p {
+            text-transform: uppercase;
+            color: @dark-color;
+            font-size: 1.125rem;
+            font-family: @menu-font;
+            font-weight: 100;
+            letter-spacing: .025em;
+        }
+    }
+}
+
+@keyframes arrow-animate {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -5px);
+    }
+}
+
+@import "phone.less";
+@import "tablet.less";
+@import "desktop.less";
+@import "big-desktop.less";

@@ -1,0 +1,84 @@
+/* tablet landscape */
+@media screen
+and (orientation: landscape)
+and (min-device-width: 900px)
+and (max-device-width: 1199px) {
+    #about-me-page {
+        #about-me-container {
+            margin-top: 10vh;
+        }
+    }
+    #portfolio-page {
+        #portfolio-content {
+            margin-top: 7.5vh;
+        }
+    }
+    #contact-page {
+        #contact-content {
+            top: 10%;
+        }
+    }
+}
+
+
+/* tablet portrait */
+@media screen
+and (orientation: portrait)
+and (min-device-width: 600px)
+and (max-device-width: 899px) {
+    .contact-header {
+        p {
+            font-size: 5vw;
+        }
+    }
+    .contact-info {
+        p {
+            font-size: 7vw;
+        }
+        a {
+            font-size: 7vw;
+        }
+    }
+    #about-me-page {
+        #about-me-container {
+            margin-bottom: 0;
+            #about-me-photo {
+                height: auto;
+                margin-bottom: 0;
+            }
+            #about-me-content {
+                .about-me-text {
+                    font-size: 1.8rem;
+                }
+                #about-me-signature {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    #portfolio-page {
+        #portfolio-header {
+            p {
+                font-size: 6.33vw;
+            }
+        }
+        #portfolio-content {
+            margin-top: 6vh;
+            ul {
+                li {
+                    width: 30%;
+                    height: 30%;
+                    margin: .85vh 1.66%;
+                    &:nth-child(9) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #contact-page {
+        #contact-content {
+            top: 16%;
+        }
+    }
+}

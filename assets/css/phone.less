@@ -1,0 +1,160 @@
+/* phone portrait up to 400px width*/
+@media screen
+and (orientation: portrait)
+and (max-device-width: 599px) {
+    .menu {
+        padding-top: 2.81vh;
+        font-size: 4vw;
+        ul {
+            padding-bottom: 2.81vh;
+        }
+    }
+    .scroll {
+        bottom: 0;
+        p {
+            display: none;
+        }
+        i {
+            font-size: 10vw;
+        }
+    }
+    .contact-header {
+        p {
+            font-size: 5vw;
+        }
+    }
+    .contact-info {
+        p {
+            font-size: 7vw;
+        }
+        a {
+            font-size: 7vw;
+        }
+    }
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        i {
+            padding-top: 4px;
+            font-size: 2rem;
+        }
+    }
+    #about-me-page {
+        #about-me-container {
+            margin-top: 5vh;
+            margin-bottom: 0;
+            #about-me-photo {
+                height: auto;
+                margin-bottom: 0;
+            }
+            #about-me-content {
+                #about-me-header {
+                    line-height: 1.5;
+                }
+                .about-me-text {
+                    text-indent: 0;
+                    font-size: .95rem;
+                    line-height: 1.25;
+                }
+                #about-me-signature {
+                    font-size: 1.5rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    #portfolio-page {
+        #portfolio-header {
+            margin-top: 5vh;
+            p {
+                font-size: 9vw;
+            }
+        }
+        #portfolio-content {
+            width: 100%;
+            height: 250px;
+            margin: 8vh auto 0;
+            .swiper-button-next {
+                top: 50%;
+                right: 0px;
+                height: 30px;
+                margin-top: -15px;
+                opacity: .25;
+            }
+            .swiper-button-prev {
+                top: 50%;
+                left: 0;
+                height: 30px;
+                margin-top: -15px;
+                opacity: .25;
+            }
+            ul {
+                li {
+                    width: auto;
+                    height: auto;
+                    clear: both;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #contact-page {
+        #contact-content {
+            top: 15%;
+        }
+    }
+    #copyright {
+        height: 50px;
+        #copyright-text {
+            padding-top: 15px;
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+/* phone portrait from 400px width and 700px height*/
+@media screen
+and (orientation: portrait)
+and (min-device-height: 700px)
+and (min-device-width: 400px)
+and (max-device-width: 599px) {
+    #about-me-page {
+        #about-me-container {
+            margin-top: 6vh;
+            #about-me-content {
+                .about-me-text {
+                    font-size: 1.4rem;
+                    line-height: 1.25;
+                }
+                #about-me-signature {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    #portfolio-page {
+        #portfolio-content {
+            margin-top: 14vh;
+            .swiper-button-next {
+                top: 50%;
+                height: 50px;
+                margin-top: -25px;
+            }
+            .swiper-button-prev {
+                top: 50%;
+                height: 50px;
+                margin-top: -25px;
+            }
+        }
+    }
+    #contact-page {
+        #contact-content {
+            top: 20%;
+        }
+    }
+}
